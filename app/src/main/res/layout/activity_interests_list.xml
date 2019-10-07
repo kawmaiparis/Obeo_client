@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingHorizontal="20dp"
+    android:background="@drawable/background_homescreen"
+    >
+
+    <TextView
+        android:id="@+id/InterestHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Your Interests"
+        style="@style/TextViewStyle"
+        android:textColor="@color/darkPink"
+        android:layout_marginTop="20dp"
+        android:textSize="30sp" />
+
+    <RelativeLayout
+        android:id="@+id/interestButtonLayout"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/InterestHeader"
+        android:orientation="vertical">
+
+        <ExpandableListView
+            android:id="@+id/expandableListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignStart="@+id/interestButtonLayout">
+        </ExpandableListView>
+
+    </RelativeLayout>
+
+
+    <!--<Button-->
+        <!--android:id="@+id/addNewInterest"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentLeft="false"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:text="+" />-->
+
+</RelativeLayout>

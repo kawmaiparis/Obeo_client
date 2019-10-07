@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@drawable/background_create_account"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/block"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="30dp"
+        >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="New Account"
+            android:textColor="@color/darkPink"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+
+        <ScrollView
+            android:id="@+id/scroll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/textView1"
+            android:layout_marginHorizontal="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!--FORENAME-->
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:id="@+id/foreNameTextView"
+                    android:layout_below="@id/textView1"
+                    style="@style/TextViewStyle"
+                    android:layout_marginTop="20dp"
+                    android:text="Forename"
+                    />
+
+                <EditText
+                    android:layout_width="170dp"
+                    android:id="@+id/forenameEditText"
+                    android:layout_below="@id/foreNameTextView"
+                    android:hint="Forename"
+                    android:layout_alignParentLeft="true"
+                    android:importantForAutofill="no"
+                    style="@style/EditTextStyle"
+                    tools:text="@tools:sample/cities" />
+
+                <!--SURNAME-->
+                <TextView
+                    android:layout_marginRight="110dp"
+                    android:layout_width="wrap_content"
+                    android:id="@+id/surnameTextView"
+                    android:layout_below="@id/textView1"
+                    android:layout_alignParentRight="true"
+                    style="@style/TextViewStyle"
+                    android:layout_marginTop="16dp"
+                    android:text="Surname" />
+
+                <EditText
+                    android:layout_alignParentRight="true"
+                    android:layout_width="170dp"
+                    android:id="@+id/surnameEditText"
+                    android:layout_below="@id/surnameTextView"
+                    android:hint="Surname"
+                    android:importantForAutofill="no"
+                    style="@style/EditTextStyle" />
+
+                <!--GENDER-->
+                <TextView
+                    android:id="@+id/genderTextView"
+                    android:layout_below="@id/surnameEditText"
+                    style="@style/TextViewStyle"
+                    android:layout_marginTop="16dp"
+                    android:text="Gender" />
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/genderRadio"
+                    android:layout_below="@id/genderTextView">
+
+                    <RadioButton
+                        android:id="@+id/male"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Male"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Female"/>
+
+                </RadioGroup>
+
+                <!--PASSWORD-->
+
+                <TextView
+                    android:id="@+id/passwordTextView"
+                    android:layout_below="@id/genderRadio"
+                    style="@style/TextViewStyle"
+                    android:layout_marginTop="16dp"
+                    android:text="Password" />
+
+                <EditText
+                    android:id="@+id/passwordEditText"
+                    android:layout_below="@id/passwordTextView"
+                    android:hint="Password"
+                    android:importantForAutofill="no"
+                    android:inputType="textPassword"
+                    style="@style/EditTextStyle"/>
+
+                <!--CONFIRM PASSWORD-->
+                <TextView
+                    android:id="@+id/confirmPasswordTextView"
+                    android:layout_below="@id/passwordEditText"
+                    style="@style/TextViewStyle"
+                    android:layout_marginTop="16dp"
+                    android:text=" Confirm Password"/>
+
+                <EditText
+                    android:id="@+id/confirmPasswordEditText"
+                    android:layout_below="@id/confirmPasswordTextView"
+                    android:hint="Confirm Password"
+                    android:importantForAutofill="no"
+                    android:inputType="textPassword"
+                    style="@style/EditTextStyle"
+                    tools:ignore="TextFields" />
+
+                <!--EMAIL-->
+                <TextView
+                    android:id="@+id/emailTextView"
+                    android:layout_below="@id/confirmPasswordEditText"
+                    style="@style/TextViewStyle"
+                    android:layout_marginTop="16dp"
+                    android:text="Email" />
+
+                <EditText
+                    android:id="@+id/emailEditText"
+                    android:layout_below="@id/emailTextView"
+                    android:hint="email"
+                    android:inputType="textEmailAddress"
+                    android:importantForAutofill="no"
+                    style="@style/EditTextStyle"/>
+
+                <!--DATE OF BIRTH-->
+                <TextView
+                    android:id="@+id/dobTextView"
+                    android:layout_below="@id/emailEditText"
+                    style="@style/TextViewStyle"
+                    android:layout_marginTop="16dp"
+                    android:text="Date of birth" />
+
+                <LinearLayout
+                    android:id="@+id/linearLayout"
+                    android:layout_below="@id/dobTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/dobDayEditText"
+                        style="@style/EditTextStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="dd"
+                        android:importantForAutofill="no"
+                        android:inputType="number"
+                        android:maxLength="2" />
+
+                    <TextView
+                        android:id="@+id/slash1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:text="/"
+                        android:textSize="30sp" />
+
+                    <EditText
+                        android:id="@+id/dobMonthEditText"
+                        style="@style/EditTextStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="mm"
+                        android:importantForAutofill="no"
+                        android:inputType="number"
+                        android:maxLength="2" />
+
+                    <TextView
+                        android:id="@+id/slash2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:text="/"
+                        android:textSize="30sp" />
+
+                    <EditText
+                        android:id="@+id/dobYearEditText"
+                        style="@style/EditTextStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="yyyy"
+                        android:importantForAutofill="no"
+                        android:inputType="number"
+                        android:maxLength="4" />
+                </LinearLayout>
+
+                <!--LANGUAGE-->
+                <TextView
+                    android:id="@+id/Language"
+                    android:layout_below="@id/emailEditText"
+                    style="@style/TextViewStyle"
+                    android:layout_marginTop="16dp"
+                    android:text="Native Language"
+                    />
+
+                <Spinner
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/selectLanguageSpinner"/>
+
+                <!-- CREATE ACCOUNT BUTTON -->
+                <Button
+                    android:layout_marginTop="30dp"
+                    android:id="@+id/createAccountButton"
+                    style="@style/ButtonDarkPink"
+                    android:layout_centerHorizontal="true"
+                    android:text="Create Account" />
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingHorizontal="20dp"
+    android:background="@drawable/background_homescreen">
+
+
+
+    <TextView
+        android:id="@+id/InterestHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textAllCaps="true"
+        android:textColor="@color/darkPink"
+        android:textStyle="bold"
+        android:background="@drawable/button_fade"
+        android:layout_marginTop="18dp"
+        android:text="SET YOUR languages"
+        android:paddingVertical="10dp"
+        android:paddingHorizontal="15dp"
+        android:textSize="25sp" />
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/InterestHeader"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="30dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/rv"/>
+
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_fade">
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/languageLabel"
+                    android:text="Language"/>
+                <Spinner
+                    style="@style/MySpinner"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/languageSpinner"
+                    android:layout_below="@id/languageLabel"/>
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/languageLevelLabel"
+                    android:text="Level"
+                    android:layout_below="@id/languageSpinner"/>
+                <Spinner
+                    style="@style/MySpinner"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/languageLevelSpinner"
+                    android:layout_below="@id/languageLevelLabel"/>
+
+                <Button
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:id="@id/confirmButton"
+                    style="@style/ButtonDarkPink"
+                    android:text="add new language"
+                    android:layout_below="@id/languageLevelSpinner"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <!--<LinearLayout-->
+            <!--android:id="@+id/languageButtonLayout"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:orientation="vertical"></LinearLayout>-->
+    </ScrollView>
+
+    <!--<Button-->
+        <!--android:id="@+id/addNewLanguage"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentLeft="false"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:text="+" />-->
+
+</RelativeLayout>

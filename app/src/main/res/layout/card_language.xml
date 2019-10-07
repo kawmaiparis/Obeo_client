@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cv"
+    app:cardBackgroundColor="#00000000"
+    app:cardElevation="0dp">
+
+    <RelativeLayout
+        android:padding="15dp"
+        android:background="@drawable/button_fade"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/languageLabel"
+            android:text="Language"/>
+        <Spinner
+            android:layout_marginTop="5dp"
+            style="@style/MySpinner"
+            android:layout_marginLeft="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/languageSpinner"
+            android:layout_below="@id/languageLabel"/>
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/languageLevelLabel"
+            android:text="Level"
+            android:layout_below="@id/languageSpinner"/>
+        <Spinner
+            style="@style/MySpinner"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/languageLevelSpinner"
+            android:layout_below="@id/languageLevelLabel"/>
+        <Button
+            android:layout_marginTop="5dp"
+            android:layout_width="300dp"
+            android:textColor="@color/darkPink"
+            android:layout_height="wrap_content"
+            style="@style/ButtonFade"
+            android:id="@id/confirmButton"
+            android:text="update"
+            android:layout_below="@id/languageLevelSpinner"/>
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
+
+

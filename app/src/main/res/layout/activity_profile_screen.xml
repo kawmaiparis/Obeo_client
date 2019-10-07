@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/block"
+        android:layout_width="match_parent"
+        android:layout_height="408dp"
+        >
+
+        <ImageView
+            android:id="@+id/background_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0.8"
+            />
+
+        <!--android:background="@drawable/background_london"-->
+        <!--android:alpha="0.8"-->
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/black_gradient" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imageView"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="45dp"
+            app:civ_border_color="@color/black"
+            app:civ_border_width="1dp" />
+
+        <!--<ImageView-->
+        <!--android:id="@+id/imageView"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:paddingTop="10dp"-->
+        <!--android:paddingBottom="10dp"-->
+        <!--tools:srcCompat="@tools:sample/avatars[4]" />-->
+
+        <TextView
+            android:id="@+id/profile_name"
+            style="@style/TextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageView"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:text="Profile Name"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/profile_occupation"
+            style="@style/TextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/profile_name"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:text="Profile Occupation"
+            android:textColor="@color/white"
+            android:textSize="15dp" />
+
+        <Button
+            android:id="@+id/reportButton"
+            style="@style/ButtonFade"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="9dp"
+            android:text="Report" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="300dp"
+        >
+
+        <Button
+            android:id="@+id/sayHi"
+            style="@style/ButtonDarkPink"
+            android:layout_width="184dp"
+            android:layout_height="wrap_content"
+            android:text="SAY HI !" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_below="@+id/block"
+        android:layout_width="match_parent"
+        android:paddingTop="30dp"
+        android:paddingHorizontal="20dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/genderTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/TextViewStyle"
+            android:textColor="@color/black"
+            android:text="gender"
+            android:textAllCaps="true"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"/>
+
+        <TextView
+            android:id="@+id/bio_header"
+            android:layout_below="@id/genderTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/TextViewStyle"
+            android:textColor="@color/black"
+            android:text="about"
+            android:textAllCaps="true"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:paddingTop="15dp"
+            android:layout_gravity="center_horizontal"/>
+
+
+        <TextView
+            android:id="@+id/profile_bio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#99000000"
+            android:layout_below="@id/bio_header"
+            style="@style/TextViewStyle"
+            android:text="Profile Bio"
+            android:textSize="15dp"
+            android:paddingTop="15dp"
+            />
+
+        <TextView
+            android:id="@+id/language_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/profile_bio"
+            style="@style/TextViewStyle"
+            android:textColor="@color/black"
+            android:text="languages"
+            android:textAllCaps="true"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:paddingTop="15dp"
+            android:layout_gravity="center_horizontal"/>
+
+        <TextView
+            android:id="@+id/profile_languages"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#99000000"
+            android:layout_below="@id/language_header"
+            style="@style/TextViewStyle"
+            android:text="Languages"
+            android:textSize="15dp"
+            android:paddingTop="15dp"
+            />
+
+        <TextView
+            android:id="@+id/interest_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/profile_languages"
+            style="@style/TextViewStyle"
+            android:textColor="@color/black"
+            android:text="Interests"
+            android:textAllCaps="true"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:paddingTop="15dp"
+            android:layout_gravity="center_horizontal"/>
+
+        <TextView
+            android:id="@+id/profile_interests"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#99000000"
+            android:layout_below="@id/interest_header"
+            style="@style/TextViewStyle"
+            android:text="Interests"
+            android:textSize="15dp"
+            android:paddingTop="15dp"
+            />
+
+        <!--<TextView-->
+            <!--android:id="@+id/profile_age"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:textColor="@color/black"-->
+            <!--style="@style/TextViewStyle"-->
+            <!--android:layout_below="@id/profile_bio"-->
+            <!--android:layout_gravity="center_horizontal"-->
+            <!--android:paddingTop="15dp"-->
+            <!--android:textSize="12dp"-->
+            <!--android:text="Profile Age" />-->
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,98 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:navigationBarColor">@color/darkBlue</item>
+        <item name="android:statusBarColor">@color/darkBlue</item>
+
+        <item name="android:windowActivityTransitions">true</item>
+        <!--<item name="android:windowEnterAnimation">@transition/explode</item>-->
+        <!--<item name="android:windowExitAnimation">@transition/explode</item>-->
+    </style>
+
+    <style name="LightText" parent="AppTheme">
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <style name="DarkText" parent="AppTheme">
+        <item name="android:textColor">#000000</item>
+    </style>
+
+    <style name="DarkTextForProfile" parent="AppTheme">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:fontFamily">sans-serif-condensed-light</item>
+        <item name="android:textSize">50sp</item>
+    </style>
+
+    <style name="BlackNavBar" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:navigationBarColor">@color/black</item>
+        <item name="android:statusBarColor">@color/black</item>
+    </style>
+
+    <style name="EditTextStyle" parent="android:Widget.EditText">
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:paddingHorizontal">20dp</item>
+        <item name="android:paddingVertical">5dp</item>
+        <item name="android:typeface">normal</item>
+        <item name="android:background">@drawable/button_fade</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:scrollHorizontally">true</item>
+        <item name="android:textColorHint">@drawable/text_fade</item>
+        <item name="android:inputType">text</item>
+    </style>
+
+    <style name="TextViewStyle" parent="android:Widget.TextView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/lightPink</item>
+
+    </style>
+
+    <style name="ButtonFade" parent="android:Widget.Button">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/button_background_transparent</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textColor">@color/lightPink</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="ButtonDarkPink" parent="android:Widget.Button">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/button_background</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="MyCheckbox" parent="@style/Widget.AppCompat.CompoundButton.CheckBox">
+        <item name="android:colorControlNormal">@color/lightPink</item>
+        <item name="android:colorControlActivated">@color/darkPink</item>
+        <item name="android:colorControlHighlight">#FFFFFF</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat</item>
+    </style>
+
+    <style name="MySpinner" parent="android:Widget.Spinner">
+        <item name="android:textColor">@color/darkPink</item>
+    </style>
+
+</resources>
+
+

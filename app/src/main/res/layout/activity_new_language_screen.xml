@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp">
+    <Button
+        android:id="@+id/cancelLangUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:text="X" />
+
+    <Button
+        android:id="@+id/confirmUpdateButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="✓" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_below="@+id/confirmUpdateButton"
+        android:orientation="vertical"
+
+        android:layout_height="match_parent">
+
+
+        <TextView
+        android:id="@+id/newLanguageHeader"
+        android:layout_below="@+id/confirmUpdateButton"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add New Language"
+
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/nameOfLanguageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_below="@+id/confirmUpdateButton"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:text="Language Name"
+            android:textSize="30sp" />
+
+
+    <EditText
+        android:id="@+id/nameOfInterestEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/levelView"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+
+        android:hint="Language Name"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/levelView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nameOfLanguageView"
+
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:text="LEVEL"
+
+        android:textSize="25sp" />
+
+        <EditText
+            android:id="@+id/levelNumberEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/levelView"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+
+            android:inputType="number"
+            android:hint="Language Level"
+            android:textSize="25sp" />
+    </LinearLayout>
+
+</RelativeLayout>
+

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GuideScreen">
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/location_photo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/location_planning" />
+
+        <TextView
+            android:id="@+id/profileHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:textColor="@color/darkPink"
+            android:background="@drawable/background_fade_text_very_dark"
+            android:layout_marginTop="18dp"
+            android:text="Safety guide"
+            android:paddingVertical="10dp"
+            android:paddingHorizontal="15dp"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/guideText"
+            android:layout_below="@id/profileHeader"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/background_fade_text_very_dark"
+            android:layout_margin="20dp"
+            android:text="guideline"
+            android:padding="15dp"
+            android:textColor="@color/white"
+            />
+
+
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

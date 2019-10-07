@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_create_account"
+    android:paddingVertical="30dp"
+    android:paddingHorizontal="50dp">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Holiday"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/darkPink"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:id="@+id/locationTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Where are you going?"
+        android:textColor="@color/white"
+        android:layout_marginTop="15dp"
+        android:textSize="25sp"
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@id/title"
+        />
+
+    <EditText
+        android:id="@+id/locationEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Location"
+        android:layout_gravity="center_horizontal"
+        android:importantForAutofill="no"
+        android:inputType="none"
+        android:focusable="false"
+        android:longClickable="false"
+        android:layout_below="@id/locationTextView"
+        style="@style/EditTextStyle"/>
+
+    <TextView
+        android:id="@+id/startDateTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start Date"
+        android:layout_marginTop="15dp"
+        android:textSize="25sp"
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@id/locationEditText"
+        android:textColor="@color/white"
+        />
+
+    <EditText
+        android:id="@+id/startDateEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Start Date"
+        android:layout_gravity="center_horizontal"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:focusable="false"
+        android:longClickable="false"
+        android:layout_below="@id/startDateTextView"
+        style="@style/EditTextStyle"
+        />
+
+    <TextView
+        android:id="@+id/endDateTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="End Date"
+        android:layout_marginTop="15dp"
+        android:textSize="25sp"
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@id/startDateEditText"
+        android:textColor="@color/white"
+        />
+
+    <EditText
+        android:id="@+id/endDateEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="EndDate"
+        android:layout_gravity="center_horizontal"
+        android:importantForAutofill="no"
+        android:focusable="false"
+        android:longClickable="false"
+        android:layout_below="@id/endDateTextView"
+        style="@style/EditTextStyle"
+        tools:ignore="TextFields" />
+
+    <Button
+        android:id="@+id/addHolidayButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Holiday"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        style="@style/ButtonDarkPink"
+        />
+
+</RelativeLayout>
